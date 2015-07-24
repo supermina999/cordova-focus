@@ -1,0 +1,7 @@
+{
+    "version": "0.1.0",
+    "name": "supermina999.focus",
+    "cordova_name": "Focus",
+    "description": "Focus plugin for android",
+    "repo": "git@github.com:supermina999/cordova-focus.git",
+}

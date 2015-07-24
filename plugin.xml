@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="supermina999.focus"
+    version="0.1.0">
+    <name>Focus</name>
+    <description>Focus plugin for Android</description>
+    <repo>https://github.com/supermina999/cordova-focus.git</repo>
+
+  <js-module src="www/focus.js" name="focus">
+    <clobbers target="cordova.plugins.Focus" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Focus">
+        <param name="android-package" value="supermina999.focus.Focus" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Focus.java" target-dir="src/supermina999/focus/" />
+  </platform>
+
+</plugin>
